@@ -61,6 +61,7 @@ uint16_t MCP23017::readGPIO()
 
 void MCP23017::writeGPIO(uint16_t value)
 {
+    io = value;
     TinyWireM.beginTransmission(i2c_addr);
     TinyWireM.write(GPIOA);
     TinyWireM.write(io & 0xFF);
