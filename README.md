@@ -7,7 +7,7 @@ example code:
 ```cpp
 #include <Arduino.h>
 
-#include <MCP23017.h>
+#include <MCP23017_Attiny85.h>
 
 MCP23017 mcp;
 
