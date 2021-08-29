@@ -1,4 +1,4 @@
-#include "MCP23017.h"
+#include "MCP23017_Attiny85.h"
 #include <TinyWireM.h>
 
 MCP23017::MCP23017(uint8_t addr)
