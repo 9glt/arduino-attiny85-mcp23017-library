@@ -1,0 +1,24 @@
+{
+    "name": "MCP23017 library for Attiny85",
+    "keywords": "mcp, mcp23017, attiny85",
+    "version": "0.1",
+    "description": "Library which lets you to control mcp23017 I/O expander simply",
+    "authors": {
+        "name": "Mindaugas Žvirblis",
+        "email": "mz@9g.lt",
+        "url": "https://github.com/sponsors/blinkinglight/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/9glt/arduino-attiny85-mcp23017-library.git"
+    },
+    "frameworks": "arduino",
+    "platforms": "avr",
+    "dependencies": [
+        {
+            "owner": "adafruit",
+            "name": "TinyWireM",
+            "version": "^1.1.0"
+        }
+    ]
+}

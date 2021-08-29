@@ -36,8 +36,10 @@ public:
     void begin();
 
     void pinMode(uint8_t pin, uint8_t mode);
-    uint8_t digitalRead(uint8_t pin);
+    bool digitalRead(uint8_t pin);
     void digitalWrite(uint8_t pin, uint8_t value);
+
+    void setInterrupt(uint8_t pin, bool enabled);
 
     uint16_t readGPIO();
     void writeGPIO(uint16_t value);
@@ -47,8 +49,9 @@ private:
     uint16_t io_dir = 0;
     uint16_t io_pull = 0;
     uint16_t io = 0;
+    uint16_t iot = 0;
 
     void send(uint8_t addr, uint8_t data, bool stop = true);
     uint16_t read(uint8_t addr);
-    uint16_t getRegister(uint8_t baseAddress, uint8_t port);
+    uint8_t fixPin(uint8_t pin);
 };
