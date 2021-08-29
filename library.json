@@ -1,7 +1,7 @@
 {
     "name": "MCP23017 library for Attiny85",
     "keywords": "mcp, mcp23017, attiny85",
-    "version": "0.1",
+    "version": "0.1.0",
     "description": "Library which lets you to control mcp23017 I/O expander simply",
     "authors": {
         "name": "Mindaugas Žvirblis",
